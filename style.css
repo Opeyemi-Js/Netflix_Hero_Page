@@ -108,6 +108,10 @@ p{
    span{
        white-space: nowrap;
    }
+    h1{
+       font-weight: 500;
+       font-size: 2rem;
+   }
    .right_arrow:hover{
     padding-left: 0;
     cursor: default;
