@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background:linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(./images/hero.jpeg);
+    background-size: cover;
+}
+/* Layout */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -3.13em 12.50em 3.13em 9.38em;
+}
+.hero_section{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.membership{
+    margin-top: .63em;
+    gap: .313em;
+}
+.email_field{
+    width: 30em;
+    height: 3.2em;
+    outline: none;
+    border: .063em solid gray;
+    color: white;
+    border-radius:0.25em;
+    background-color: rgba(0, 0, 0, 0.60);
+}
+input{
+    padding-left: 1em;
+}
+.email_field:focus{
+    border: 2px solid white;
+}
+button.btn{
+    background-color: rgb(229, 9, 20);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.get_started{
+    width: 10em;
+    height: 2.6em;
+    outline:none;
+    border: none;
+    border-radius:0.25em;
+    font-size: 1rem;
+}
+.sign_in{
+    width: 5em;
+    height: 2em;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius:0.25em;
+}
+.right_arrow{
+    padding-top: .3em;
+}
+.right_arrow:hover{
+    padding-left: .3em;
+    cursor: pointer;
+}
+/* Typograghpy */
+h1{
+    color: #fff;
+    font-size: 2.8em;
+    font-weight: 700;
+}
+p{
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-top: 1.25em;
+}
+
+::placeholder{
+    color: gray;
+    font-weight: 500;
+    font-size: 1.09rem;
+}
+@media screen and (max-width:768px) {
+    .header{
+        margin: -.13em 1em;
+    }
+   .membership{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+   }
+   .email_field{
+       width: 25em;
+    }
+   .get_started{
+       margin-top: .6em;
+   }
+   span{
+       white-space: nowrap;
+   }
+   .right_arrow:hover{
+    padding-left: 0;
+    cursor: default;
+}
+}
